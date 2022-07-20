@@ -1,0 +1,52 @@
+    <!DOCTYPE html>
+    <html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>표 만들기2</title>
+        <style>
+            table, th, td {
+                border:1px solid #ccc;
+            }		
+            th {
+                padding:15px;  
+            }
+            tr > td:nth-child(odd) { 
+                width:150px;  
+            }
+            tr > td:nth-child(even) { 
+                width:250px; 
+            }
+            th, td {
+            text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <p id="summary"> 다음 표는 2021년 가을 애플 이벤트에서 공개한 아이폰 13 시리즈에 대한 정보로<br>모델 이름과 가격에 대한 정보를 담고 있습니다. </p>
+        <table aria-describedby=""summary>
+            <tr>
+                <th colspan="2"> 2021년 아이폰 라인업 </th>
+                <th> 가격 </th>
+            </tr>
+            <tr>
+                <td rowspan="4"> 기종 </td>
+                <td> iPhone 13 </td>
+                <td> $799 </td>
+            </tr>
+            <tr>
+                <td> iPhone 13 mini </td>
+                <td> $699 </td>
+            </tr>
+            <tr>
+                <td> iPhone 13 Pro </td>
+                <td> $999 </td>
+            </tr>
+            <tr>
+                <td> iPhone 13 Pro Max</td>
+                <td> $1099 </td>
+            </tr>
+        </table>
+    </body>
+    </html>
