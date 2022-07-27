@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>text color test</title>
+    <style>
+        h1 {
+            color:blue;     /*제목을 나타내는 h1 태그는 파란색*/
+        }
+
+        .accent_orange {
+            color:rgb(255, 158, 0);    /*본문에서 강조하고자 하는 단어는 붉은색*/
+        }
+
+        .accent_green {
+            color: #00e65a;
+        }
+
+        ul {
+            list-style: none;
+        }
+    </style>
+</head>
+<body>
+    <h1><span class="accent_orange">(중요)</span> 면접 시간 및 장소 안내</h1>
+    <p>6월 29일에 진행되는 <span class="accent_green">2022 신입 공채 1차 면접 일정</span>은 다음과 같습니다.</p>
+    <ul> --일정--
+        <li>9:00~10:00: 사전 안내</li>
+        <li>10:00~12:00: <span class="accent_orange">면접 진행</span></li>
+    </ul>
+    <ul> --장소--
+        <li class="accent_orange">ㅇㅇ시 ㅇㅇ구 ㅇㅇ동 XX건물 nnn호</li>
+    </ul>
+    <p>해당 일정은 당일 진행에 따라 상이할 수 있습니다.</p>
+</body>
+</html>
