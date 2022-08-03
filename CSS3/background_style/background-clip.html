@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background-clip test</title>
+    <style>
+        div {
+          width: 300px;
+          padding: 35px;
+          border: 5px dotted #222;
+          background:skyblue;
+		  margin-bottom:20px;
+        }
+        .border-box {
+            background-clip: border-box;
+        }
+        .padding-box {
+            background-clip: padding-box;
+        }
+        .content-box {
+            background-clip: content-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="border-box">
+        <h1>HTML</h1>
+        <p>인터넷 서비스의 하나인 월드 와이드 웹을 통해 볼 수 있는 문서를 만들 때 사용하는 웹 언어의 한 종류이다. 특히 하이퍼텍스트를 작성하기 위해 개발되었으며, 인터넷에서 웹을 통해 접근되는 대부분의 웹 페이지들은 HTML로 작성된다.
+            [네이버 지식백과]</p>
+    </div>
+    <div class="padding-box">
+        <h1>HTML</h1>
+        <p>인터넷 서비스의 하나인 월드 와이드 웹을 통해 볼 수 있는 문서를 만들 때 사용하는 웹 언어의 한 종류이다. 특히 하이퍼텍스트를 작성하기 위해 개발되었으며, 인터넷에서 웹을 통해 접근되는 대부분의 웹 페이지들은 HTML로 작성된다.
+            [네이버 지식백과]</p>
+    </div>
+    <div class="content-box">
+        <h1>HTML</h1>
+        <p>인터넷 서비스의 하나인 월드 와이드 웹을 통해 볼 수 있는 문서를 만들 때 사용하는 웹 언어의 한 종류이다. 특히 하이퍼텍스트를 작성하기 위해 개발되었으며, 인터넷에서 웹을 통해 접근되는 대부분의 웹 페이지들은 HTML로 작성된다.
+            [네이버 지식백과]</p>
+    </div>
+</body>
+</html>
