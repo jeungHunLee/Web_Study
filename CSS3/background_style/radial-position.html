@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>radial-position test</title>
+    <style>
+        div{
+			width:500px;
+			height:300px;
+			border-radius:10px;
+		}
+        .grad {
+            background: orange;
+            background: -webkit-radial-gradient(10% 10%, circle, orange, red);
+            background: -moz-radial-gradient(10% 10%, circle, orange, red);
+            background: -moz-radial-gradient(10% 10%, circle, orange, red);
+            background: radial-gradient(circle at 10% 10%, orange, red);
+        }
+    </style>
+</head>
+<body>
+    <div class="grad"></div>
+</body>
+</html>

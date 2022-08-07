@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>linear-gradient test</title>
+    <style>
+        div {
+			width:500px;
+			height:300px;
+			border-radius:10px;
+		}
+        .grad1 {    /* 방향 */
+            background: orange;    /* CSS3 미지원 브라우저용 */
+            background: -webkit-linear-gradient(left top, orange, red);     /* 사파리(시작 지점 표시) */
+            background: -moz-linear-gradient(right bottom, orange, red);    /* 모질라(마지막 지점 표시) */
+            background: -o-linear-gradient(right bottom, orange, red);      /* 오페라(마지막 지점 표시) */
+            background: linear-gradient(to right bottom, orange, red);      /* 표준(마지막 지점 표시) */
+        }
+        .grad2 {    /* 각도 */
+            background: orange;    /* CSS3 미지원 브라우저용 */
+            background: -webkit-linear-gradient(135deg, orange, red);     /* 사파리(시작 지점 표시) */
+            background: -moz-linear-gradient(135deg, orange, red);    /* 모질라(마지막 지점 표시) */
+            background: -o-linear-gradient(135deg, orange, red);      /* 오페라(마지막 지점 표시) */
+            background: linear-gradient(135deg, orange, red);      /* 표준(마지막 지점 표시) */
+        }
+    </style>
+</head>
+<body>
+    <div class="grad1"></div>
+    <br>
+    <div class="grad2"></div>
+</body>
+</html>

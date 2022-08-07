@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>radial-gradient test</title>
+    <style>
+        div{
+			width:500px;
+			height:300px;
+			border-radius:10px;
+		}
+        .grad{
+            background:red;
+            background:-webkit-radial-gradient(circle, blue, green, red);     /* 사파리 */
+            background:-moz-radial-gradient(circle, blue, green, red);    /* 모질라 */
+            background:-o-radial-gradient(circle, blue, green, red);      /* 오페라 */
+            background:radial-gradient(circle, blue, green, red);      /* 표준 */
+        }
+    </style>
+</head>
+<body>
+    <div class="grad"></div>
+</body>
+</html>

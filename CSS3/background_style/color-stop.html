@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>color stop test</title>
+    <style>
+        div {
+			width:500px;
+			height:300px;
+			border-radius:10px;
+		}
+        .grad {
+            background: red;    /* CSS3 미지원 브라우저용 */
+            background: -webkit-linear-gradient(top, red, orange 50%, red);     /* 사파리 */
+            background: -moz-linear-gradient(bottom, red, orange 50%, red);    /* 모질라 */
+            background: -o-linear-gradient(bottom, red, orange 50%, red);      /* 오페라 */
+            background: linear-gradient(bottom, red, orange 50%, red);      /* 표준 */
+        }
+    </style>
+</head>
+<body>
+    <div class="grad"></div>
+</body>
+</html>
