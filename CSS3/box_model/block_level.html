@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>block level test</title>
+    <style>
+        #block img {
+            display: block;
+            margin: 10px
+        }
+
+        #inline img {
+            margin: 10px
+        }
+    </style>
+</head>
+<body>
+    <div id="inline">    <!-- 인라인 레벨 배치 -->
+        <h1>inline level</h1>
+        <img src="images/클로버.png">
+        <img src="images/하트.png">
+        <img src="images/스페이드.png">
+    </div>
+    <div id="block">    <!-- 블록 레벨 배치 -->
+        <h1>block level</h1>
+        <img src="images/클로버.png">
+        <img src="images/하트.png">
+        <img src="images/스페이드.png">
+    </div>
+</body>
+</html>
